@@ -4,10 +4,7 @@ const app = express();
 
 // Import PG Client
 const { Client } = require("pg");
-const client = new Client(
-  process.env.DATABASE_URL ||
-    "postgres://donro:thecastle1@localhost:5432/the_acme_ice_cream_db"
-);
+const client = new Client(process.env.DATABASE_URL || 3001);
 
 // Import Morgan
 const morgan = require("morgan");
